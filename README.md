@@ -11,5 +11,5 @@ This repository can be seen as platform for presenting and sharing multiple data
 
 ### Work of Contribute
 
-All new data models are suggested to be contributed by sending pull request in GitHub. If you are new to pull request, please check more information here: [read more](https://app.luminpdf.com/viewer/bMbRhR5Dc6aXmvsTL)
+All new data models are suggested to be contributed by sending pull request in GitHub. If you are new to pull request, please check more information here: [read more](https://docs.google.com/presentation/d/1X_hKpOGpy-lHmtnomO9aA8OPYzGSnaPdtiviwl7QY4U/edit#slide=id.p3)
 
