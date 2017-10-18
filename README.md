@@ -9,3 +9,7 @@ This repository can be seen as platform for presenting and sharing multiple data
 * Downloading XML or JSON files within data models, but only works in _**Chrome**_ and _**Firefox**_, not _**IE**_
 * New data models could be contributed by pull request
 
+### Work of Contribute
+
+All new data models are suggested to be contributed by sending pull request in GitHub. If you are new to pull request, please check more information here: [read more](https://drive.google.com/drive/recent)
+
