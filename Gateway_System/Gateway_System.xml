@@ -42,7 +42,7 @@
                 <Name>NTP Server List</Name>
                 <Operations>RW</Operations>
                 <MultipleInstances>Single</MultipleInstances>
-                <Mandatory>Optional</Mandatory>
+                <Mandatory>Mandatory</Mandatory>
                 <Type>String</Type>
                 <RangeEnumeration/>
                 <Units/>
