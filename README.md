@@ -1,15 +1,15 @@
 ## Welcome to Semantic Meta Model Repository
 
-This repository can be seen as platform for presenting and sharing multiple data models of IoT devices, such as LWM2M, UCI model as well as other non-standard models. Moreover, it helps enterprises (organizations) to manage data models for objects and demonstrate them publicly in more appealing way.
+This repository can be seen as a platform for presenting and sharing multiple data models for IoT device management, such as LWM2M, BLE models as well as other non-standard or proprietary models. Moreover, it helps enterprises (organizations) to manage data models for objects and demonstrate them publicly in more appealing way.
 
 ### Features
 
-* Browsing diverse data models in more interactive way
-* Searching models, which implemented by using List.js (a JavaScript library), more information see [List.js](http://listjs.com/)
-* Downloading XML or JSON files within data models, but only works in _**Chrome**_ and _**Firefox**_, not _**IE**_
-* New data models could be contributed by pull request
+* Browsing diverse data models in a more interactive way
+* Searching models, which is implemented by using List.js (a JavaScript library). For more information see [List.js](http://listjs.com/)
+* Downloading XML or JSON files containing the data models for use by management servers (Currently supports _**Chrome**_ and _**Firefox**_)
+* Allowing new data models to be contributed by pull requests
 
-### Work of Contribute
+### To Contribute
 
-All new data models are suggested to be contributed by sending pull request in GitHub. If you are new to pull request, please check more information here: [read more](https://docs.google.com/presentation/d/1X_hKpOGpy-lHmtnomO9aA8OPYzGSnaPdtiviwl7QY4U/edit#slide=id.p3)
+We suggest contributing new data models by using Github pull requests. If you are new to pull requests, please check for more information here: [read more](https://docs.google.com/presentation/d/1X_hKpOGpy-lHmtnomO9aA8OPYzGSnaPdtiviwl7QY4U/edit#slide=id.p3)
 
