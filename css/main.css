@@ -84,6 +84,12 @@ h5 {
 	color: #C0C0C0;	
 }
 
+.btn-large.an:hover{
+	background-color: #AAAAAA;
+	color: #fff;
+	border: 2px solid transparent;	
+}
+
 .btn-large.an {
     	border: 2px solid #AAAAAA;
 	padding: 15px 40px;
