@@ -1,6 +1,18 @@
 {
+  "datamodels": [
+  {
     "name":"Gateway_System",
     "XMLurl":"Gateway_System/Gateway_System.xml",
-    "age":"thisis exian",
-    "sex":"1022"
+    "des":"thisis exian",
+    "id":"1022"
+
+  },
+  {
+    "name":"Gateway_23",
+    "XMLurl":"Gateway_System/Gateway_System.xml",
+    "des":"thisis exian",
+    "id":"1022"
+  }
+      
+]
 }
