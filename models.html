@@ -66,11 +66,11 @@
 
   <p id="wo"></p>
 
-    <ul class="list">
+  <ul class="list">
   <li>
   <div class="row">
     <div class="col-md-8 col-md-offset-2 conForm">
-      <a href="Gateway_System/modelsOfGatewaySystem.html">
+      <a id="link">
       <div class="notice notice-lg">
       <h4><span id="name" class="name"></span></h4>
       
@@ -107,11 +107,11 @@
 </script>
 
 <script type="text/javascript">
-var myJSON = '{ "name":"Gateway_System", "ida":"1022", "id":"New York" }';
+var myJSON = '{ "name":"Gateway_System", "des":"1022", "id":"New York", "link": "Gateway_System/modelsOfGatewaySystem.html"}';
 var myObj = JSON.parse(myJSON);
 document.getElementById("name").innerHTML = myObj.name;
 document.getElementById("ID").innerHTML = myObj.id;
-  
+document.getElementById("link").innerHTML = myObj.link;
 
 </script>
 </body>
