@@ -72,7 +72,7 @@
         <div class="notice notice-lg">
         <h4><span class="name">wode</span></h4>
         <p class="description">12</P> 
-          <span class="test" style="display:none;">ip</span>
+          <span class="test" id="haha" style="display:none;"></span>
         </a>
       </div>
     </div>
@@ -105,13 +105,19 @@
 
 <script type="text/javascript">
 
-$.get('Gateway_System/Gateway_System.xml', function(xmlDoc){
-  document.getElementById("wo").innerHTML=
+var Models_JSON = '{ "name":"GW", "des":"wodeoos", "xml":"Gateway_System/Gateway_System.xml", "herf_link":"Gateway_System/Gateway_System.html" }';
+
+var mObj = JSON.parse(Models_JSON);
+
+document.getElementById("name").innerHTML = mObj.name;
+document.getElementById("description").innerHTML = mObj.des;
+var x = mObj.xml;
+
+$.get(x, function(xmlDoc){
+  document.getElementById("haha").innerHTML=
   xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+
 });
-
-
-
 
 
 
