@@ -74,7 +74,7 @@
         <div class="notice notice-lg">
         <h4><span class="name">wode</span></h4>
         <p class="description">12</P> 
-        <div class="test">ip</div>
+        <div class="test" id="wo"></div>
         </a>
       </div>
     </div>
@@ -108,7 +108,7 @@
 <script type="text/javascript">
 
 $.get('Gateway_System/Gateway_System.xml', function(xmlDoc){
-  document.getElementById("test").innerHTML=
+  document.getElementById("wo").innerHTML=
   xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 });
 
