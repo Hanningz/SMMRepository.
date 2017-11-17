@@ -70,9 +70,9 @@
       <div class="col-md-8 col-md-offset-2 conForm">
         <a id="link">
         <div class="notice notice-lg">
-        <h4><span id="name" class="name"></span></h4>
-        <p class="description">aa</P> 
-          <p class="test">3</p>
+        <h4><span id="n" class="name"></span></h4>
+        <p id="c" class="description"></P> 
+          <p class="test"></p>
         </a>
       </div>
     </div>
@@ -109,8 +109,8 @@ var Models_JSON = '{ "name":"GW", "des":"wodeoos", "xml":"Gateway_System/Gateway
 
 var mObj = JSON.parse(Models_JSON);
 
-document.getElementById("name").innerHTML = mObj.name;
-document.getElementById("description").innerHTML = mObj.des;
+document.getElementById("n").innerHTML = mObj.name;
+document.getElementById("c").innerHTML = mObj.des;
 var x = mObj.xml;
 
 $.get(x, function(xmlDoc){
