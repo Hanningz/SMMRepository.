@@ -72,7 +72,7 @@
     <div class="col-md-8 col-md-offset-2 conForm">
       <a id="link">
       <div class="notice notice-lg">
-      <h4><span id="name" class="name"></span></h4>
+      <h4><span id="Name" class="Name"></span></h4>
       
       <p id="ID" class="id"></P>
       </a>
@@ -97,6 +97,7 @@
 <script src="js/bootstrap.min.js"></script>  
 <script src="js/list.js"></script>
 <script src="js/list.page.js"></script>
+  
 <script type="text/javascript">
   var modellist= new List('mlist', {
     valueNames: ['demo', 'id'],
@@ -107,11 +108,13 @@
 </script>
 
 <script type="text/javascript">
-var myJSON = '{ "name":"Gateway_System", "des":"1022", "id":"New York", "link": "Gateway_System/modelsOfGatewaySystem.html"}';
-var myObj = JSON.parse(myJSON);
-document.getElementById("name").innerHTML = myObj.name;
-document.getElementById("ID").innerHTML = myObj.id;
-document.getElementById("link").getAttribute("href")= myObj.link;
+
+$.get('Gateway_System/Gateway_System.xml', function(xmlDoc){
+  document.getElementById("Name").innerHTML=
+  xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+});
+
+
 
 
 
