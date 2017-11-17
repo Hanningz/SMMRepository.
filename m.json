@@ -1,7 +1,21 @@
 {
-    {
-    "name": "Zara Ali",
-    "age" : "67",
-    "sex": "female"
-    }
+  "datamodels": [
+  {
+    "name":"Gateway_System",
+    "XMLurl":"Gateway_System/Gateway_System.xml",
+    "des":"thisis exian",
+    "id":"1022"
+
+  },
+  {
+    "name":"Gateway_System",
+    "XMLurl":"Gateway_System/Gateway_System.xml",
+    "des":"thisis exian",
+    "id":"1022"
+
+  }
+
+
+]
 }
+
