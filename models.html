@@ -109,12 +109,12 @@ var Models_JSON = '{ "name":"GW", "des":"wodeoos", "xml":"Gateway_System/Gateway
 
 var mObj = JSON.parse(Models_JSON);
 
-document.getElementByClassName("name").innerHTML = mObj.name;
-document.getElementByClassName("description").innerHTML = mObj.des;
+document.getElementsByClassName("name").innerHTML = mObj.name;
+document.getElementsByClassName("description").innerHTML = mObj.des;
 var x = mObj.xml;
 
 $.get(x, function(xmlDoc){
-  document.getElementByClassName("test").innerHTML=
+  document.getElementsByClassName("test").innerHTML=
   xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 
 });
