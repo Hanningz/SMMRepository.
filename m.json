@@ -1,21 +1,22 @@
 {
-  "datamodels": [
-  {
-    "name":"Gateway_System",
-    "XMLurl":"Gateway_System/Gateway_System.xml",
-    "des":"thisis exian",
-    "id":"1022"
-
-  },
-  {
-    "name":"Gateway_System",
-    "XMLurl":"Gateway_System/Gateway_System.xml",
-    "des":"thisis exian",
-    "id":"1022"
-
-  }
-
-
-]
+   "person": [
+       {
+           "firstName": "Clark",
+           "lastName": "Kent",
+           "job": "Reporter",
+           "roll": 20
+       },
+       {
+           "firstName": "Bruce",
+           "lastName": "Wayne",
+           "job": "Playboy",
+           "roll": 30
+       },
+       {
+           "firstName": "Peter",
+           "lastName": "Parker",
+           "job": "Photographer",
+           "roll": 40
+       }
+   ]
 }
-
