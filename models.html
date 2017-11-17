@@ -72,9 +72,9 @@
     <div class="col-md-8 col-md-offset-2 conForm">
       <a href="Gateway_System/modelsOfGatewaySystem.html">
       <div class="notice notice-lg">
-      <h4><span class="demo"></span></h4>
+      <h4><span id=""demo" class="demo"></span></h4>
       
-      <p class="id"></P>
+      <p id="id" class="id"></P>
       </a>
     </div>
   </div>
@@ -107,7 +107,7 @@
 </script>
 
 <script type="text/javascript">
-var myJSON = '{ "name":"ws", "id":22, "des":"New York" }';
+var myJSON = '{ "name":"ws", "id":"22", "des":"New York" }';
 var myObj = JSON.parse(myJSON);
 document.getElementById("demo").innerHTML = myObj.name;
 document.getElementById("id").innerHTML = myObj.id;
