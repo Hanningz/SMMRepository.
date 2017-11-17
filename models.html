@@ -64,20 +64,9 @@
 		</div> 		
 	</div>
 
-	<p id="wo"></p>
 
     <ul class="list">
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-			<a href="Gateway_System/modelsOfGatewaySystem.html">
-			<div class="notice notice-lg">
-			<h4><span class="name">Gateway System</span></h4>
-			
-			<p class="description">Example Gateway Application Object describing base system</P>
-			</a>
-		</div>
-	</div>
+	
    	</li>	
 	
 	<li>
@@ -85,108 +74,19 @@
 		<div class="col-md-8 col-md-offset-2 conForm">
         	<a href="Gateway_Wireless/modelsOfGatewayWireless.html">
           	<div class="notice notice-lg">
-			<h4><span class="name">Gateway Wireless</span></h4>
+			<h4><span class="demo"></span></h4>
 			
-			<p class="description">Example Gateway Application Object for representing wireless IP interfaces</P>
+			<p class="description"></P>
 	     	</div> 
         	</a>
 		</div>
 	</div>
 	</li>
 
-	<li>	
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="#">
-          	<div class="notice notice-lg">
-			<h4><span class="name">PAN Interface</span></h4>
-			
-			<p class="description">Generic object for modelling endpoint or gateway PAN interfaces, such as Bluetooth, BLE and Zigbee</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>
-	</li>
-	
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="#">
-          	<div class="notice notice-lg">
-			<h4><span class="name">BLE GATT</span></h4>
-			<p class="description">Generic object for proxies to expose BLE services</P>
-	     	</div> 
-        	</a>
-        	</div>
-    	</div>
-	</li>
-	
-	
-	
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="Log_Control/modelsOfLogControl.html">
-          	<div class="notice notice-lg">
-			<h4><span class="name">Log Control</span></h4>
-			<p class="description">Controls the log handling for the sensor data</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>
-	</li>
-	
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="#">
-          	<div class="notice notice-lg">
-			<h4><span class="name">New model A</span></h4>
-			<p class="description">descriptions of modelA and information</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>	
-	</li>
-	
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="#">
-          	<div class="notice notice-lg">
-			<h4><span class="name">New model B</span></h4>
-			<p class="description">descriptions of modelB and information</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>	
-	</li>
-
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="EMM_Integrator/modelsOfEMMIntegrator.html">
-         	<div class="notice notice-lg">
-			<h4><span class="name">EMM Integrator</span></h4>
-			<p class="description">Object for defining the components of an Energy Measurement Module</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>
-	</li>
-
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="DeviceBinding/modelsOfDeviceBinding.html">
-          	<div class="notice notice-lg">
-			<h4><span class="name">Device Binding</span></h4>
-			<p class="description">Connects the EMM to the device it measures</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>	
-	</li>	
+<div id = "stage" style = "background-color:#cc0;">
+         STAGE
+      </div>
+		
 	
 </ul>
 <ul class="pagination"></ul>
@@ -210,5 +110,15 @@
 	});
 
 </script>
+
+<script>
+
+$(document).ready(function() {	
+	$.getJSON("m.json", function(m) {
+		$("#stage").html("<p> Name: " + m.name + "</p>");
+               });
+         });
+</script>
+
 </body>
 </html>
