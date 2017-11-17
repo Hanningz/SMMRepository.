@@ -112,17 +112,15 @@
 </script>
 
 <script>
-
 $(document).ready(function () {
-    $.getJSON("m.json",
-    function (json) {
+    $.getJSON("m.json",function (json)) {
         var tr;
         for (var i = 0; i < json.length; i++) {
-            tr = $('<tr/>');
+            tr = $("<tr/>");
             tr.append("<td>" + json[i].name + "</td>");
             tr.append("<td>" + json[i].id + "</td>");
             tr.append("<td>" + json[i].des + "</td>");
-            $('table').append(tr);
+            $("table").append(tr);
         }
     });
 });
