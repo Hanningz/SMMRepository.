@@ -68,20 +68,18 @@
 
   <ul class="list">
   <li>
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2 conForm">
-      <a id="link">
-      <div class="notice notice-lg">
-      <h4><span id="Name" class="Name"></span></h4>
-      
-      <p id="ID" class="id"></P>
-      </a>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 conForm">
+        <a id="link">
+        <div class="notice notice-lg">
+        <h4><span class="name">wode</span></h4>
+        <p class="description">12</P> 
+        <p id="test" class="test" style="display:none;"></p>
+        </a>
+      </div>
     </div>
-  </div>
-    </li> 
+  </li> 
   
- 
- 
 
 </ul>
 <ul class="pagination"></ul>
@@ -100,7 +98,7 @@
   
 <script type="text/javascript">
   var modellist= new List('mlist', {
-    valueNames: ['demo', 'id'],
+    valueNames: ['name', 'description', 'test'],
     page: 7,
     plugins: [ ListPagination({}) ] 
   });
@@ -110,8 +108,8 @@
 <script type="text/javascript">
 
 $.get('Gateway_System/Gateway_System.xml', function(xmlDoc){
-  document.getElementById("Name").innerHTML=
-  xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+  document.getElementById("test").innerHTML=
+  xmlDoc.getElementsByTagName("test")[0].childNodes[0].nodeValue;
 });
 
 
