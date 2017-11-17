@@ -1,18 +1,16 @@
 {
   "datamodels": [
-  {
-    "name":"Gateway_System",
-    "XMLurl":"Gateway_System/Gateway_System.xml",
-    "des":"thisis exian",
-    "id":"1022"
-
-  },
-  {
+    {
+    "name": "Zara Ali",
+    "age" : "67",
+    "sex": "female"
+},
+ 
+     {
     "name":"Gateway_23",
     "XMLurl":"Gateway_System/Gateway_System.xml",
     "des":"thisis exian",
     "id":"1022"
-  }
-      
+  }  
 ]
 }
