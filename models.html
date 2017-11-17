@@ -74,7 +74,7 @@
         <div class="notice notice-lg">
         <h4><span class="name">wode</span></h4>
         <p class="description">12</P> 
-        <p id="test" class="test" style="display:block;"></p>
+        <p id="test" class="test" style="display:none;"></p>
         </a>
       </div>
     </div>
@@ -109,7 +109,7 @@
 
 $.get('Gateway_System/Gateway_System.xml', function(xmlDoc){
   document.getElementById("test").innerHTML=
-  xmlDoc.getElementsByTagName("test")[0].childNodes[0].nodeValue;
+  xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 });
 
 
