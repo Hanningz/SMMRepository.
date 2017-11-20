@@ -36,7 +36,7 @@
 					<li class="contributors"><a href="contribute.html">CONTRIBUTE</a></li>
 					<li class="aboutus"><a href="aboutUs.html">ABOUT US</a></li>
 					<li>
-					<a class="btn btn-large view" href="https://github.com/Hanningz/SMMRepository.">View GitHub</a>
+					<a class="btn btn-large view" href="https://github.com/T4ACTIVE/T4ACTIVE.github.io">View GitHub</a>
 					</li>
 					
 				</ul>
@@ -70,17 +70,109 @@
 	<li>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 conForm">
-			<a href="Gateway_System/modelsOfGatewaySystem.html">
+			<a href="Model_List/Gateway_System/index.html">
 			<div class="notice notice-lg">
-			<h4><span class="name" id="name">x</span></h4>
-			
-			<p class="description" id="d">sd</P>
-			<h4><span class="name">we</span>ss</h4>
+			<h4><span class="name">Gateway System</span></h4>
+				<p style="dispaly: none;" class="a">2011</p>
+			<p class="description">Example Gateway Application Object describing base system</P>
 			</a>
 		</div>
 	</div>
-   	</li>		
+   	</li>	
 	
+	<li>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 conForm">
+        	<a href="Model_List/Gateway_Wireless/index.html">
+          	<div class="notice notice-lg">
+			<h4><span class="name">Gateway Wireless</span></h4>
+			
+			<p class="description">Example Gateway Application Object for representing wireless IP interfaces</P>
+	     	</div> 
+        	</a>
+		</div>
+	</div>
+	</li>
+
+	<li>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 conForm">
+        	<a href="Model_List/Log_Control/index.html">
+          	<div class="notice notice-lg">
+			<h4><span class="name">Log Control</span></h4>
+			<p class="description">Controls the log handling for the sensor data</P>
+	      	</div> 
+        	</a>
+        	</div>
+    	</div>
+	</li>
+	
+	<li>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 conForm">
+        	<a href="Model_List/EMM_Integrator/index.html">
+         	<div class="notice notice-lg">
+			<h4><span class="name">EMM Integrator</span></h4>
+			<p class="description">Object for defining the components of an Energy Measurement Module</P>
+	      	</div> 
+        	</a>
+        	</div>
+    	</div>
+	</li>
+	
+	<li>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 conForm">
+        	<a href="Model_List/DeviceBinding/index.html">
+          	<div class="notice notice-lg">
+			<h4><span class="name">Device Binding</span></h4>
+			<p class="description">Connects the EMM to the device it measures</P>
+	      	</div> 
+        	</a>
+        	</div>
+    	</div>	
+	</li>	
+
+	<li>	
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 conForm">
+        	<a href="#">
+          	<div class="notice notice-lg">
+			<h4><span class="name">PAN Interface</span></h4>
+			
+			<p class="description">Generic object for modelling endpoint or gateway PAN interfaces, such as Bluetooth, BLE and Zigbee</P>
+	      	</div> 
+        	</a>
+        	</div>
+    	</div>
+	</li>
+	
+	<li>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 conForm">
+        	<a href="#">
+          	<div class="notice notice-lg">
+			<h4><span class="name">BLE GATT</span></h4>
+			<p class="description">Generic object for proxies to expose BLE services</P>
+	     	</div> 
+        	</a>
+        	</div>
+    	</div>
+	</li>
+	
+	<li>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 conForm">
+        	<a href="#">
+          	<div class="notice notice-lg">
+			<h4><span class="name">New model</span></h4>
+			<p class="description">descriptions of model and information</P>
+	      	</div> 
+        	</a>
+        	</div>
+    	</div>	
+	</li>		
+
 </ul>
 <ul class="pagination"></ul>
 </div>
@@ -97,30 +189,10 @@
 <script src="js/list.page.js"></script>
 <script type="text/javascript">
 	var modellist= new List('mlist', {
-	  valueNames: ['name', 'description'],
+	  valueNames: ['name', 'description', 'a'],
 	  page: 7,
 	  plugins: [ ListPagination({}) ] 
 	});
-
-</script>
-<script type="text/javascript">
-
-var Models_JSON = '{ "name":"GW", "des":"wodeoos", "xml":"Gateway_System/Gateway_System.xml", "herf_link":"Gateway_System/Gateway_System.html" }';
-
-var mObj = JSON.parse(Models_JSON);
-
-document.getElementById("name").innerHTML = mObj.name;
-document.getElementById("d").innerHTML = mObj.des;
-
-var x = mObj.xml;
-
-$.get(x, function(xmlDoc){
-  document.getElementById("haha").innerHTML=
-  xmlDoc.getElementsByTagName("Name")[0].childNodes[0].nodeValue;
-
-});
-
-
 
 </script>
 </body>
