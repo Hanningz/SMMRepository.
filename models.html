@@ -12,7 +12,18 @@
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script>
+var dmJSON = "DataModels.json";
+$.getJSON( dmJSON, function(data) {
+   $.each(data.entries, function(i, f) {
+      var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.des + "</td>" + "</tr>"
+       $(tblRow).appendTo("#entrydata tbody");
+ });
+});
+</script>
+
 </head>
+
 
 <body>
 <!-- header section -->
@@ -63,6 +74,16 @@
 			</div>
 		</div> 		
 	</div>
+	
+	<table id= "entrydata" border="1">
+	<thead>
+        <th>ID</th>
+        <th>UserName</th>
+    </thead>
+  <tbody>
+
+   </tbody>
+</table>
 
 	<p id="wo"></p>
 
@@ -70,9 +91,9 @@
 	<li>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 conForm">
-			<a id="u" href="">
+			<a href="Gateway_System/modelsOfGatewaySystem.html">
 			<div class="notice notice-lg">
-			<h4><span class="name" id="name"></span></h4>
+			<h4><span class="name" id="Name"></span></h4>
 				
 			<p class="description" id="des"></P>
 			</a>
@@ -80,19 +101,6 @@
 	</div>
    	</li>	
 	
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="Gateway_Wireless/modelsOfGatewayWireless.html">
-          	<div class="notice notice-lg">
-			<h4><span class="name">22</span></h4>
-			
-			<p class="description">323</P>
-	     	</div> 
-        	</a>
-		</div>
-	</div>
-	</li>
 </ul>
 <ul class="pagination"></ul>
 </div>
@@ -107,18 +115,6 @@
 <script src="js/bootstrap.min.js"></script>  
 <script src="js/list.js"></script>
 <script src="js/list.page.js"></script>
-
-<script>
-	var myobj,x;
-	myobj = {"name": "GS", "ObjectID": "1022", "des": "Example Gateway Application Object for representing wireless IP interfaces", "url": "/GS.xml"};
-	x = myobj.name;
-      	y = myobj.url;
-	z = myobj.des;
-      	document.getElementById("name").innerHTML = x;
-      	document.getElementById("u").innerHTML = y;
-	document.getElementById("des").innerHTML = z;
-	
-</script>
 <script type="text/javascript">
 	var modellist= new List('mlist', {
 	  valueNames: ['name', 'description'],
