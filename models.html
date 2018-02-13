@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <script>
-var dmJSON = "DataModels.json";
+var dmJSON = "https://raw.githubusercontent.com/Hanningz/SMMRepository./master/DataModels.json";
 $.getJSON( dmJSON, function(data) {
    $.each(data.entries, function(i, f) {
       var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.des + "</td>" + "</tr>"
@@ -77,7 +77,7 @@ $.getJSON( dmJSON, function(data) {
 	
 	<table id= "entrydata" border="1">
 	<thead>
-        <th>ID</th>
+        <th>IsD</th>
         <th>UserName</th>
     </thead>
   <tbody>
