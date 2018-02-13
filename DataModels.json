@@ -1,0 +1,69 @@
+{
+	"Data_Models":[
+		{
+		  "name": "Gateway System",
+		  "ObjectID": "1022",
+		  "des": "Example Gateway Application Object describing base system",
+		  "url": "/GS.xml"
+		},
+		{
+		  "name": "Gateway Wireless Interface",
+		  "ObjectID": "1025",
+		  "des": "Example Gateway Application Object for representing wireless IP interfaces",
+		  "url": "/GW.xml"
+		}
+		{
+		  "name": "Gateway Fixed Interface",
+		  "ObjectID": "1024",
+		  "des": "",
+		  "url": "/GW.xml"
+		},
+		{
+		  "name": "Log Control",
+		  "ObjectID": "25011",
+		  "des": "Controls the log handling for the sensor data",
+		  "url": "/GW.xml"
+		},
+		{
+		  "name": "EMM Integrator",
+		  "ObjectID": "25010",
+		  "des": "Object for defining the components of an Energy Measurement Module",
+		  "url": "/GW.xml"
+		},
+		{
+		  "name": "Device Binding",
+		  "ObjectID": "25012",
+		  "des": "Connects the EMM to the device it measures",
+		  "url": "/GW.xml"
+		},
+		{
+		  "name": "BLE GATT Proxy",
+		  "ObjectID": "32000",
+		  "des": "Generic object mapping BLE services via low level operations over LWM2M. Each object represents a single BLE service",
+		  "url": "/GW.xml"
+		},
+		{
+		  "name": "PAN Interface",
+		  "ObjectID": "32001",
+		  "des": "Generic object for modelling endpoint or gateway PAN interfaces, such as Bluetooth, BLE and Zigbee",
+		  "url": "/GW.xml"
+		},
+		{
+		  "name": "Native Operations",
+		  "ObjectID": "32002",
+		  "des": "Example Gateway system",
+		  "url": "/GW.xml"
+		},
+		{
+		  "name": "UCI Commands",
+		  "ObjectID": "32003",
+		  "des": "Generic object that allows LWM2M to issue system level calls to OpenWRT's UCI configuration system",
+		  "url": "/GW.xml"
+		},		
+		{
+		  "name": "BLE Commands",
+		  "ObjectID": "32004",
+		  "des": "Generic object that allows LWM2M to issue system level BLE operations via a bluetooth interface on a gateway or device",
+		  "url": "/GW.xml"
+		}		
+]}
