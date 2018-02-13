@@ -13,14 +13,16 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <script>
-var dmJSON = "https://raw.githubusercontent.com/Hanningz/SMMRepository./master/DataModels.json";
-$.getJSON( dmJSON, function(data) {
-   $.each(data.entries, function(i, f) {
-      var tblRow = "<tr>" + "<td>" + f.name + "</td>" + "<td>" + f.des + "</td>" + "</tr>"
-       $(tblRow).appendTo("#entrydata tbody");
- });
-});
+$.getJSON('people.json', function(data) {
+       $.each(data.person, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
+           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+     });
+
+   });
 </script>
+
 
 </head>
 
@@ -75,15 +77,18 @@ $.getJSON( dmJSON, function(data) {
 		</div> 		
 	</div>
 	
-	<table id= "entrydata" border="1">
-	<thead>
-        <th>IsD</th>
-        <th>UserName</th>
-    </thead>
-  <tbody>
+   <table id= "userdata" border="2">
+  	<thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>City</th>
+        </thead>
+      <tbody>
 
-   </tbody>
-</table>
+       </tbody>
+   </table>
+
 
 	<p id="wo"></p>
 
