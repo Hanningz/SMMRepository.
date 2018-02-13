@@ -1,29 +1,17 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Library API Test</title>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-		<script type="text/javascript">
-			$(document).ready(function () {
-			    $.ajax({
-			        url: "7people.json",
-			        contentType: "application/json; charset=utf-8",
-			        dataType: "jsonp",
-                    type: "POST",
-			        success: function(data) {
-			        	alert(data);
-			        	for (var x = 0; x < data.length; x++ ) {
-			        		content = data[x].name;
-			        		content += "<br>";
-		
-			        		$(content).appendTo("#Results");
-			        	}
-			        }
-			    });
-			});
-		</script>
-	</head>
-	<body>
-		<p>This is a testh.</p>
-		<div id="Results"></div>
-	</body>
+<body>
+
+<p>Use bracket notation to access the property values.</p>
+
+<p id="demo"></p>
+
+<script>
+var myObj = { "name":"John", "age":30, "car":null };
+for (x in myObj) {
+    document.getElementById("demo").innerHTML += myObj[x] + "<br>";
+}
+</script>
+
+</body>
 </html>
