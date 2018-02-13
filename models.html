@@ -72,7 +72,7 @@
 		<div class="col-md-8 col-md-offset-2 conForm">
 			<a href="Gateway_System/modelsOfGatewaySystem.html">
 			<div class="notice notice-lg">
-			<h4><span class="name"></span></h4>
+			<h4><span class="name" id="name"></span></h4>
 				
 			<p class="description"></P>
 			</a>
@@ -107,20 +107,21 @@
 <script src="js/bootstrap.min.js"></script>  
 <script src="js/list.js"></script>
 <script src="js/list.page.js"></script>
+
+<script>
+	var myobj,x;
+	myobj = {"name": "GS", "ObjectID": "1022", "des": "Example Gateway Application Object for representing wireless IP interfaces", "url": "/GS.xml"};
+	x = myobj.name;
+      	y = myobj.des;
+      	document.getElementsById("name").innerHTML = x;
+      	document.getElementsByClassName("description").innerHTML = y;
+</script>
 <script type="text/javascript">
 	var modellist= new List('mlist', {
 	  valueNames: ['name', 'description'],
 	  page: 7,
 	  plugins: [ ListPagination({}) ] 
 	});
-</script>
-<script>
-	var myobj,x;
-	myobj = {"name": "GS", "ObjectID": "1022", "des": "Example Gateway Application Object for representing wireless IP interfaces", "url": "/GS.xml"};
-	x = myobj.name;
-      	y = myobj.des;
-      	document.getElementsByClassName("name").innerHTML = x;
-      	document.getElementsByClassName("description").innerHTML = y;
 </script>
 </body>
 </html>
