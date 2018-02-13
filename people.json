@@ -1,22 +1,8 @@
 {
-   "person": [
-       {
-           "firstName": "Clark",
-           "lastName": "Kent",
-           "job": "Reporter",
-           "roll": 20
-       },
-       {
-           "firstName": "Bruce",
-           "lastName": "Wayne",
-           "job": "Playboy",
-           "roll": 30
-       },
-       {
-           "firstName": "Peter",
-           "lastName": "Parker",
-           "job": "Photographer",
-           "roll": 40
-       }
-   ]
+    "first":[
+        {"name":"张三","sex":"男"},
+        {"name":"李四","sex":"男"},
+        {"name":"王武","sex":"男"},
+        {"name":"李梅","sex":"女"}
+    ]
 }
