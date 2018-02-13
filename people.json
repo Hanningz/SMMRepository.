@@ -1,8 +1,9 @@
 {
-    "first":[
-        {"name":"张三","sex":"男"},
-        {"name":"李四","sex":"男"},
-        {"name":"王武","sex":"男"},
-        {"name":"李梅","sex":"女"}
+    "name":"John",
+    "age":31,
+    "pets":[
+        { "animal":"dog", "name":"Fido" },
+        { "animal":"cat", "name":"Felix" },
+        { "animal":"hamster", "name":"Lightning" }
     ]
 }
