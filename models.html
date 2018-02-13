@@ -72,9 +72,9 @@
 		<div class="col-md-8 col-md-offset-2 conForm">
 			<a href="Gateway_System/modelsOfGatewaySystem.html">
 			<div class="notice notice-lg">
-			<h4><span class="name" id="a">Gateway System</span></h4>
+			<h4><span class="name" id="Name"></span></h4>
 				
-			<p class="description">Example Gateway Application Object describing base system</P>
+			<p class="description" id="des"></P>
 			</a>
 		</div>
 	</div>
@@ -85,95 +85,14 @@
 		<div class="col-md-8 col-md-offset-2 conForm">
         	<a href="Gateway_Wireless/modelsOfGatewayWireless.html">
           	<div class="notice notice-lg">
-			<h4><span class="name">Gateway Wireless</span></h4>
+			<h4><span class="name"></span></h4>
 			
-			<p class="description">Example Gateway Application Object for representing wireless IP interfaces</P>
+			<p class="description"></P>
 	     	</div> 
         	</a>
 		</div>
 	</div>
 	</li>
-
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="Log_Control/modelsOfLogControl.html">
-          	<div class="notice notice-lg">
-			<h4><span class="name">Log Control</span></h4>
-			<p class="description">Controls the log handling for the sensor data</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>
-	</li>
-	
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="EMM_Integrator/modelsOfEMMIntegrator.html">
-         	<div class="notice notice-lg">
-			<h4><span class="name">EMM Integrator</span></h4>
-			<p style="display: none;" class="a">25010</p>
-			<p class="description">Object for defining the components of an Energy Measurement Module</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>
-	</li>
-	
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="DeviceBinding/modelsOfDeviceBinding.html">
-          	<div class="notice notice-lg">
-			<h4><span class="name">Device Binding</span></h4>
-			<p class="description">Connects the EMM to the device it measures</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>	
-	</li>	
-
-	<li>	
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="#">
-          	<div class="notice notice-lg">
-			<h4><span class="name">PAN Interface</span></h4>
-			
-			<p class="description">Generic object for modelling endpoint or gateway PAN interfaces, such as Bluetooth, BLE and Zigbee</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>
-	</li>
-	
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="#">
-          	<div class="notice notice-lg">
-			<h4><span class="name">BLE GATT</span></h4>
-			<p class="description">Generic object for proxies to expose BLE services</P>
-	     	</div> 
-        	</a>
-        	</div>
-    	</div>
-	</li>
-	
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-        	<a href="#">
-          	<div class="notice notice-lg">
-			<h4><span class="name">New model</span></h4>
-			<p class="description">descriptions of model and information</P>
-	      	</div> 
-        	</a>
-        	</div>
-    	</div>	
-	</li>		
-
 </ul>
 <ul class="pagination"></ul>
 </div>
@@ -190,12 +109,18 @@
 <script src="js/list.page.js"></script>
 <script type="text/javascript">
 	var modellist= new List('mlist', {
-	  valueNames: ['name', 'description', 'a'],
+	  valueNames: ['name', 'description'],
 	  page: 7,
 	  plugins: [ ListPagination({}) ] 
 	});
-
 </script>
-
+<script>
+	var myobj,x;
+	myobj = {"name": "GS", "ObjectID": "1022", "des": "Example Gateway Application Object for representing wireless IP interfaces", "url": "/GS.xml"};
+	x = myobj.name;
+      	y = myobj.des;
+      	document.getElementById("Name").innerHTML = x;
+      	document.getElementById("des").innerHTML = y;
+</script>
 </body>
 </html>
