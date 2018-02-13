@@ -1,115 +1,29 @@
-<!doctype html>
-<html class="no-js" lang="">
-
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Models</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-<script>
-$.getJSON("people.json", "", function(data) {
-    　  
-       $.each(data.first, function(i, item) {
-            var str = '<div>姓名:' + item.name + '性别：' + item.sex + '</div>';
-            document.write(str);
-       });
-});
-</script>
-</head>
-
-
-<body>
-<!-- header section -->
-<section class="navpart">
-  <header id="header">
-		<div class="navbar navbar-inverse navbar-fixed-top " id="menu">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				
-			</div>
+<html>
+	<head>
+		<title>Library API Test</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+			    $.ajax({
+			        url: "people.json",
+			        contentType: "application/json; charset=utf-8",
+			        dataType: "jsonp",
+                    type: "POST",
+			        success: function(data) {
+			        	alert(data);
+			        	for (var x = 0; x < data.length; x++ ) {
+			        		content = data[x].name;
+			        		content += "<br>";
 		
-			<div class="navbar-collapse collapse move-me" id="">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="home"><a href="index.html">HOME</a></li>
-					<li class="models"><a href="models.html"><font color="#00CED1">MODELS</font></a></li>
-					<li class="contributors"><a href="contribute.html">CONTRIBUTE</a></li>
-					<li class="aboutus"><a href="aboutUs.html">ABOUT US</a></li>
-					<li>
-					<a class="btn btn-large view" href="https://github.com/Hanningz/SMMRepository.">View GitHub</a>
-					</li>
-					
-				</ul>
-			</div>   
-		</div>
-		</div>
-  </header>
-  <!-- banner text -->
-</section>
-<!-- header section --> 
-
-<!-- models section -->
-<section id="contact" class="section" style="text-align:center;">
-<div id="accordion" role="tablist" aria-multiselectable="true">
-<div class="container">
-<div id="mlist">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-			<h4>Welcome to the ACTIVE Data Model Repository</h4>
-			<h3>Reusable objects and object definitions are listed below</h3>
-			<div class="ser">
-			<i class="fa fa-search fa-1x" aria-hidden="true"></i>
-			<input type="text" class="search" placeholder="Search model here by name, id or keyword..." />
-			</div>
-		</div> 		
-	</div>
-
-	<p id="wo"></p>
-
-    <ul class="list">
-	<li>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 conForm">
-			<a href="Gateway_System/modelsOfGatewaySystem.html">
-			<div class="notice notice-lg">
-			<h4><span class="name" id="Name"></span></h4>
-				
-			<p class="description" id="des"></P>
-			</a>
-		</div>
-	</div>
-   	</li>	
-	
-</ul>
-<ul class="pagination"></ul>
-</div>
-</div>
-</div>
-</section>						 
-
-<!-- models section --> 
-
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script>  
-<script src="js/list.js"></script>
-<script src="js/list.page.js"></script>
-<script type="text/javascript">
-	var modellist= new List('mlist', {
-	  valueNames: ['name', 'description'],
-	  page: 7,
-	  plugins: [ ListPagination({}) ] 
-	});
-</script>
-</body>
+			        		$(content).appendTo("#Results");
+			        	}
+			        }
+			    });
+			});
+		</script>
+	</head>
+	<body>
+		<p>This is a test.</p>
+		<div id="Results"></div>
+	</body>
 </html>
