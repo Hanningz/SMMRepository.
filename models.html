@@ -3,35 +3,24 @@
 <script type="text/javascript" > </script>
 
 <script>
-var json = '[{"id":"1","tagName":"apple"},{"id":"2","tagName":"orange"},
-{"id":"3","tagName":"banana"},{"id":"4","tagName":"watermelon"},
-{"id":"5","tagName":"pineapple"}]';
 
-$.each(json, function(idx, obj) {
-	alert(obj.tagName);
-});
-   
+var data = '{ "client": [{"ClientID": "0000000001", "Name": "Valdez Gilberto JR",   "Phone": "(956)542-8148" , "MedActID": "10", "Gender": "M", "Division": "WP", "Address": "1905 Illinois Ave N", "Class": "", "CityState": "Brownsville TX 78521-6732" } , {"ClientID": "0000000002", "Name": "Salazar Olga F", "Phone": "(956)546-3909" , "MedActID": "100", "Gender": "F", "Division": "MP", "Address": "Route 8 Box 626 (San Pedro)", "Class": "", "CityState": "Brownsville TX 78520" } ]}';
+var obj = JSON.parse(data);
+for (var i = 0; i < obj.client.length; i++) {
+  document.write("<div>" + obj.client[i].Name + "</div>");
+   document.write(obj.client[i].Name);
+   document.write("<div>");
+   document.write(obj.client[i].Name);
+  
+   document.write("</div>"); 
+}
+
 </script>
 </head>
 
 <body>
 
-<div class="wrapper">
-<div class="profile">
-   <table id= "userdata" border="2">
-     <thead>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email Address</th>
-            <th>City</th>
-        </thead>
-      <tbody>
 
-       </tbody>
-   </table>
-
-</div>
-</div>
 
 </body>
 </html>
