@@ -3,16 +3,14 @@
 <script type="text/javascript" > </script>
 
 <script>
-$(function() {
-   var people = [];
-   $.getJSON("people.txt", function(data) {
-       $.each(data.person, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
-           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
-           $(tblRow).appendTo("#userdata tbody");
-           });
-       });
+var json = '[{"id":"1","tagName":"apple"},{"id":"2","tagName":"orange"},
+{"id":"3","tagName":"banana"},{"id":"4","tagName":"watermelon"},
+{"id":"5","tagName":"pineapple"}]';
+
+$.each(json, function(idx, obj) {
+	alert(obj.tagName);
 });
+   
 </script>
 </head>
 
