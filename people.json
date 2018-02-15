@@ -1,17 +1,22 @@
-[  
-{  
-    "name":"张国立",  
-    "sex":"男",  
-    "email":"zhangguoli@123.com"  
-},  
-{  
-    "name":"张铁林",  
-    "sex":"男",  
-    "email":"zhangtieli@123.com"  
-},  
-{  
-    "name":"邓婕",  
-    "sex":"女",  
-    "email":"zhenjie@123.com"  
-}  
-]  
+{
+   "person": [
+       {
+           "firstName": "Clark",
+           "lastName": "Kent",
+           "job": "Reporter",
+           "roll": 20
+       },
+       {
+           "firstName": "Bruce",
+           "lastName": "Wayne",
+           "job": "Playboy",
+           "roll": 30
+       },
+       {
+           "firstName": "Peter",
+           "lastName": "Parker",
+           "job": "Photographer",
+           "roll": 40
+       }
+   ]
+}
